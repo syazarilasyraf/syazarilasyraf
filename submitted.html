@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AMA - Syazaril Asyraf</title>
+
+    <link rel="icon" type="image/png" href="https://i.ibb.co/JkfDdZN/wmsa.png">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.0/dist/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@500;800&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+</head>
+<body style="background-color:#050505;">
+
+    <nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-dark portfolio-navbar" style="background-color:#111111;">
+        <div class="container"><a class="navbar-brand logo" href="#"><img src="https://i.ibb.co/JkfDdZN/wmsa.png"></a><button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="nav navbar-nav ml-auto">
+                    <li class="nav-item" role="presentation"><a class="nav-link active" href="/" style="font-style:normal;">Home</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="https://blog.wmsa.tech" target="_blank">Writing</a></li>
+                </ul>
+                <ul class="nav navbar-nav">
+                    <li class="dropdown">
+                        <a class="dropdown-toggle nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="true" href="#">Links</a>
+                        <div class="dropdown-menu" role="menu" style="background-color:#111111;">
+                            <a class="dropdown-item" role="presentation" href="ama.html" style="color:rgb(255,255,255);">AMA</a>
+                            <a class="dropdown-item" role="presentation" href="bookmarks.html" style="color:rgb(255,255,255);">Bookmarks</a>
+                            <a class="dropdown-item" role="presentation" href="tools.html" style="color:rgb(255,255,255);">Tools</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+
+    <main class="page lanidng-page">
+        <section class="portfolio-block block-intro" style="background-color:#050505;">
+            <div class="container">
+                <div class="about-me" style="color:rgb(255,255,255);">
+                    <p class="text-left" style="font-size:24px; font-weight: bold">Ask Me Anything</p>
+                    <p class="text-left" style="font-size:16px; color: #d4d4d4;">Just for fun! I'll try to answer as soon as I can.<br></p>
+                    <form target="hidden_iframe" onsubmit="submitted=true;" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfgieDU5HU-jVXUcnPBgGaAVhXTueUezGpCj9Aob7HdHdX_DA/formResponse">
+                    <textarea id="myTxt" type="hidden" rows="3" cols="100" name="entry.2126295501" placeholder="Ask me anything..."></textarea>
+    
+                    <br>
+                    <br>
+    
+                    <div type="submit" id="btn" >
+                        <button class="btn-primary btn">
+                            Ask Away!
+                        </button>
+                    </div>
+
+                    <div class="alert alert-success">
+                        Question submitted!
+                    </div>
+    
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+
+                    <div class="main" id="vueSearch" v-cloak>
+
+                        <div v-for="(link, linkIndex) in results" v-bind:style="linkIndex + 1 < results.length ? 'margin-bottom: 1em;' : ''">
+                            <p class="text-left my-2" style="font-size:16px; color:rgb(255,255,255);" v-html="link.title"></p>
+                            <p class="text-left text-muted my-2" style="font-size:12px; ">Asked on {{ link.url }}</p>
+                            <p class="text-left" style="font-size:16px; color: #d4d4d4;" v-html="link.description"></p>
+                        </div>
+
+                              <!-- will render 'The condition is true' into the DOM -->
+                            <!-- <div id="example">
+                                <h1 v-if="a">No answers</h1>
+                            </div> -->
+
+                        <div class="text-center">
+                            <div class="text-center">
+                                <div class="d-inline-block">
+                                    <div class="input-group mb-3" v-if="pages.length">
+                                    <div class="input-group-append">
+                                        <button v-for="page in pages" v-bind:class="'btn btn-outline-secondary' + (page.number == pageNumber ? ' active' : '')" type="button" style="float: initial;" v-on:click="changePage(page.number)" v-bind:title="page.caption">{{ page.text }}</button>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.0/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.3/vue.min.js"></script>
+<script src="assets/js/function.js"></script>
+    
+</body>
+</html>
