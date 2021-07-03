@@ -28,6 +28,31 @@
   <link rel="icon" type="image/png" href="images/avatar.png"">
 
 </head>
+<style>
+[data-ribbon] {
+  position: relative;
+  display: inline-block;
+  background: #FF7700;
+  text-align: center;
+  color: #fff;
+  text-decoration: none;
+  
+}
+
+[data-ribbon]:after {
+  content: attr(data-ribbon);
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: inline-block;
+  font-size: 10px;
+  height:17px;
+  border-bottom: 15px solid #F6A41A;
+  border-left:   15px solid transparent;
+  border-right:  15px solid transparent;
+  transform: rotate(45deg) translate(19%, -60%);
+}
+</style>
 <body>
 
   <!-- Primary Page Layout
@@ -62,8 +87,8 @@
         <a class="button button-shopee" href="https://shopee.com.my/SAMBAL-GORENG-BILIS-MATA-BIRU-PEDAS-MANJA-READY-STOCK--i.175337954.4183315690" target="_blank" rel="noopener"><img class="icon" src="https://shopee.com.my/favicon.ico" alt="Shopee Logo">Pedas Manja</a>
           <br>
 
-        <!-- Shopee out of stock-->
-        <a class="button button-shopee-outofstock" target="_blank" rel="noopener"><img class="icon" src="images/shopee-favicon.ico" alt="Shopee Logo">Pedas Cheese</a>
+        <!-- Shopee-->
+        <a class="button button-shopee" data-ribbon="sold out" target="_blank" rel="noopener"><img class="icon" src="https://shopee.com.my/favicon.ico" alt="Shopee Logo">Pedas Cheese</a>
           <br>
 
         <!-- Whatsapp -->
