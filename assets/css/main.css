@@ -55,6 +55,16 @@ a:hover {
   color: #0075c1;
   text-decoration: underline;
 }
+mark {
+  border-radius: .125rem;
+  /* font-weight: bold; */
+  background: #353535;
+  color: #d4d4d4;
+  margin-left: -.125rem;
+  margin-right: -.125rem;
+  padding-left: .125rem;
+  padding-right: .125rem;
+}
 img {
   vertical-align: middle;
   border-style: none;
@@ -669,7 +679,7 @@ textarea {
     padding-bottom: 1.2rem;
   }
   .portfolio-navbar.fixed-top + .page {
-    padding-top: 5.5rem;
+    padding-top: 5rem;
   }
 }
 .page-footer {
