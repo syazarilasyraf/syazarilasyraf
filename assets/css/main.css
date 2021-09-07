@@ -759,3 +759,12 @@ textarea {
   width: 20px;
   height: 20px;
 }
+
+.input {
+  display: inline-block;
+  font-weight: 400;
+  
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+}
