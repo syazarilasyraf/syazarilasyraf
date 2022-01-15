@@ -31,8 +31,12 @@
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="icon" type="image/png" href="https://i.ibb.co/JkfDdZN/wmsa.png">
+  
+  <script src="https://swetrix.org/swetrix.js" defer></script>
 
 </head>
+  
+
 <style>
     [data-ribbon] {
       position: relative;
@@ -203,4 +207,21 @@
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 </body>
+  <script>
+
+  document.addEventListener('DOMContentLoaded', () => {
+
+    // Initialising the script with the Project ID
+
+    // you can find in the dashboard
+
+    swetrix.init('SG5btIPEIOUu')
+
+    // Tracking page views
+
+    swetrix.trackViews()
+
+  })
+
+</script>
 </html>
