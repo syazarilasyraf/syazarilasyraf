@@ -27,9 +27,8 @@
                     <li class="dropdown">
                         <a class="dropdown-toggle nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="true" href="#">More</a>
                         <div class="dropdown-menu" role="menu" style="background-color:#111111;">
-                            <a class="dropdown-item mt-2" role="presentation" href="https://blog.wmsa.tech" style="color:rgb(255,255,255);">Blog</a>
-                            <a class="dropdown-item mt-2" role="presentation" href="/ama/" style="color:rgb(255,255,255);">AMA</a>
-                            <a class="dropdown-item my-2" role="presentation" href="https://wmsa.tech/links" style="background-color: #1E1E1E; color:rgb(255,255,255);">All links ▸</a>
+                            <a class="dropdown-item mt-2" role="presentation" href="https://wmsa.hashnode.dev/" style="color:rgb(255,255,255);">Blog</a>
+                            <a class="dropdown-item my-2" role="presentation" href="/links/" style="background-color: #1E1E1E; color:rgb(255,255,255);">All links ▸</a>
                         </div>
                     </li>
                 </ul>
@@ -63,29 +62,33 @@
                             <p class="text-left text-muted pb-1" style="font-size:16px; margin-bottom: 0.5em; color: #d4d4d4; line-height: 1.5rem;">Get updates about new posts, new projects, or other meaningful 
                                 updates to this site delivered to your inbox. Alternatively, you can <mark onclick="window.open('https:twitter.com/syazariIasyraf')" style="cursor: pointer;" >follow me on Twitter.</mark></p>
             
-                            <div id="revue-embed">
-            
-                                <form action="https://www.getrevue.co/profile/syazarilasyraf/add_subscriber" method="post" id="revue-form" name="revue-form" target="_blank">
-                                <div class="revue-form-group">
-            
-                                  <input class="revue-form-field mb-2" style="border: 1px solid transparent;
-                                  padding: .375rem .75rem;
-                                  font-size: 1rem;
-                                  line-height: 1.5;
-                                  border-radius: .25rem;
-                                  background-color: rgba(255,255,255,0.05);
-                                  font-family: 'Inter'; width: 100%; color: #fff;" placeholder="Email address" type="email" name="member[email]" id="member_email">
-                                </div>
-                            
-                                <div class="revue-form-actions">
-                                  <input class="btn-primary btn" style="font-family: 'Inter'; width: 100%; border-color: #323538;" type="submit" value="Subscribe" name="member[subscribe]" id="member_submit">
-                                </div>
-            
-                                </form>
-                            
-                                <div class="revue-form-footer text-muted mt-2" style="font-weight: 300; font-size: 13px;;">By subscribing, you agree with Revue’s <a target="_blank" href="https://www.getrevue.co/terms">Terms of Service</a> and <a target="_blank" href="https://www.getrevue.co/privacy">Privacy Policy</a>.</div>
-                                
-                            </div>
+                                <div id="mlb2-6677157">
+                                    <form class="ml-block-form" action="https://assets.mailerlite.com/jsonp/534041/forms/95167824242148861/subscribe" method="post">
+                                      <div class="mb-2">
+                                        <input class="horizontal-fields" style="
+                                          border: 1px solid transparent;
+                                          padding: .375rem .75rem;
+                                          font-size: 1rem;
+                                          line-height: 1.5;
+                                          border-radius: .25rem;
+                                          background-color: rgba(255, 255, 255, 0.05);
+                                          font-family: 'Inter';
+                                          width: 100%;
+                                          color: #fff;
+                                        " placeholder="Email address" type="email" name="fields[email]">
+                                      </div>
+                                      <div class="mb-2">
+                                        <input class="btn-primary btn" style="
+                                          font-family: 'Inter';
+                                          width: 100%;
+                                          border-color: #323538;
+                                        " type="submit" value="Subscribe" onclick="subscribeFormSubmit(event)">
+                                      </div>
+                                    </form>
+                                    <div class="text-muted mt-2" style="font-weight: 300; font-size: 13px;">
+                                      By subscribing, you agree with our’s <a target="_blank" href="https://www.mailerlite.com/legal/privacy-policy">Privacy Policy</a>.
+                                    </div>
+                                  </div>
             
                             </div>
             
@@ -101,5 +104,8 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.0/js/bootstrap.bundle.min.js"></script>
     
+
+<script src="/newsletter.js"></script>
+
 </body>
 </html>
